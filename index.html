@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Microsoft Paint</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <ul>
+        <li>Mes API</li>
+        <li>Acceuil</li>
+        <li>Gestion des activités</li>
+        <li>Gestion des bieres</li>
+        <li>Gestion des musics</li>
+        <li>Gestion des voitures</li>
+    </ul>
+
+    <button type="button" class="btn btn-primary" id="myBtn">
+        Ajouter
+      </button>
+
+
+
+    <table>
+        <tr>
+            <th class="t1">id</th>
+            <th>nom</th>
+
+        </tr>
+    </table>
+    <div class="c">
+        <div id="a">
+
+
+
+        </div>
+
+
+        <div id="b">
+
+
+
+        </div>
+
+        <div class="z">
+        </div>
+        <!-- Modal -->
+        <div class="container">
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header" style="padding:35px 50px;">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body" style="padding:40px 50px;">
+                            <form role="form">
+                                <div class="form-group">
+                                    <label for="usrname1"><span class="glyphicon glyphicon-user"></span> Nom</label>
+                                    <input type="text" class="form-control" id="usrname1" placeholder="Entrer le nom">
+                                </div>
+                                <div class="form-group">
+                                    <label for="usrname2"><span class="glyphicon glyphicon-eye-open"></span> Pays</label>
+                                    <input type="text" class="form-control" id="usrname2" placeholder="Entrer le pays">
+                                </div>
+                                <div class="form-group">
+                                    <label for="usrname3"><span class="glyphicon glyphicon-user"></span> prix</label>
+                                    <input type="text" class="form-control" id="usrname3" placeholder="Entrer le prix">
+                                </div>
+                                <div class="form-group">
+                                    <label for="usrname4"><span class="glyphicon glyphicon-eye-open"></span> Amertume</label>
+                                    <input type="text" class="form-control" id="usrname4" placeholder="Entrer l'amertume">
+                                </div>
+                                <div class="form-group">
+                                    <label for="usrname5"><span class="glyphicon glyphicon-eye-open"></span> Degre</label>
+                                    <input type="text" class="form-control" id="usrname5" placeholder="Entrer le degre">
+                                </div>
+                                <div class="form-group">
+                                    <label for="usrname6"><span class="glyphicon glyphicon-eye-open"></span> Couleur</label>
+                                    <input type="text" class="form-control" id="usrname6" placeholder="Entrer la couleur">
+                                </div>
+                                <div>
+                                    <button type="button" class="btn btn-primary" onclick="aj()" class="b1" id="fer">Ajouter</button> </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="container">
+        <!-- Modal -->
+        <div class="modal fade" id="myModal1" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header" style="padding:35px 50px;">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body" style="padding:40px 50px;">
+                        <form role="form">
+                            <div class="form-group">
+                                <label for="usrname7"><span class="glyphicon glyphicon-user"></span> Nom</label>
+                                <input type="text" class="form-control" id="usrname7" placeholder="Entrer le nom">
+                            </div>
+                            <div class="form-group">
+                                <label for="usrname8"><span class="glyphicon glyphicon-eye-open"></span> Pays</label>
+                                <input type="text" class="form-control" id="usrname8" placeholder="Entrer le pays">
+                            </div>
+                            <div class="form-group">
+                                <label for="usrname9"><span class="glyphicon glyphicon-user"></span> prix</label>
+                                <input type="text" class="form-control" id="usrname9" placeholder="Entrer le prix">
+                            </div>
+                            <div class="form-group">
+                                <label for="usrname10"><span class="glyphicon glyphicon-eye-open"></span> Amertume</label>
+                                <input type="text" class="form-control" id="usrname10" placeholder="Entrer l'amertume">
+                            </div>
+                            <div class="form-group">
+                                <label for="usrname11"><span class="glyphicon glyphicon-eye-open"></span> Degre</label>
+                                <input type="text" class="form-control" id="usrname11" placeholder="Entrer le degre">
+                            </div>
+                            <div class="form-group">
+                                <label for="usrname12"><span class="glyphicon glyphicon-eye-open"></span> Couleur</label>
+                                <input type="text" class="form-control" id="usrname12" placeholder="Entrer la couleur">
+                            </div>
+                            <div>
+                                <button type="button" onclick="sup()" class="btn btn-danger" id="sup1">Supprimer</button>
+                                <button type="button" onclick="mod()" class=" btn btn-primary " class="b1 " id="mod1">Modifier</button> </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="jquery-3.4.1.min.js "></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous "></script>
+
+
+
+
+    <script src="js.js "></script>
+
+</body>
+
+</html>

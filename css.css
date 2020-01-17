@@ -1,0 +1,60 @@
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    list-style: none;
+}
+
+table {
+    display: flex;
+    margin-top: 2em;
+}
+
+#bou {
+    background-color: rgb(38, 129, 165);
+    color: white;
+    width: 12em;
+    height: 3em;
+}
+
+th {
+    width: 22em;
+    border-top: 1px solid gray;
+    margin-top: 2em;
+    margin-left: 10em;
+}
+
+td {
+    width: 30em;
+    border-right: 1px solid gray;
+}
+
+tr {}
+
+.c {
+    display: flex;
+}
+
+#b {
+    text-align: center;
+}
+
+#a {
+    text-align: center;
+}
+
+#bout {
+    width: 5em;
+    height: 2em;
+}
+
+.z {
+    display: flex;
+    flex-direction: column;
+}
+
+.t1 {
+    padding-left: 7em;
+}
